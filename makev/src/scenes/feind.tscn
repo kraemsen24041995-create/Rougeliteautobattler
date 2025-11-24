@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://h0a06fi6cahl"]
+
+[ext_resource type="Script" uid="uid://dafjn027qog66" path="res://src/scripts/feind.gd" id="1_y8jg4"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(179, 22)
+script = ExtResource("1_y8jg4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]

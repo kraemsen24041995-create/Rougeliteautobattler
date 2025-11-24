@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bj0lkvqewqa81"]
+
+[ext_resource type="Script" uid="uid://dck1f603jwm0x" path="res://src/scripts/player.gd" id="1_cusn3"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_26beo"]
+
+[node name="player" type="CharacterBody2D"]
+script = ExtResource("1_cusn3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(31.750002, 30.75)
+scale = Vector2(64.5, 62.5)
+texture = SubResource("PlaceholderTexture2D_26beo")

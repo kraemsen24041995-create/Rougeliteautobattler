@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c22d7566obox1"]
+
+[ext_resource type="PackedScene" uid="uid://bj0lkvqewqa81" path="res://src/scenes/player.tscn" id="1_kkvs4"]
+[ext_resource type="PackedScene" uid="uid://h0a06fi6cahl" path="res://src/scenes/feind.tscn" id="2_rr2wm"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="player" parent="." node_paths=PackedStringArray("target") instance=ExtResource("1_kkvs4")]
+position = Vector2(288, 373)
+up_direction = Vector2(0.99999446, 0.003333315)
+safe_margin = 2.08
+target = NodePath("../feind")
+
+[node name="player2" parent="." node_paths=PackedStringArray("target") instance=ExtResource("1_kkvs4")]
+position = Vector2(624, 359)
+target = NodePath("../feind")
+
+[node name="feind" parent="." instance=ExtResource("2_rr2wm")]
